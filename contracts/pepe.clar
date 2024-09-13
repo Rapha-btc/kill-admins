@@ -227,7 +227,7 @@
 
 (define-public (approve (is-approved bool))
   (begin
-    (asserts! (is-eq contract-caller (unwrap-panic (contract-call? .stackswap-dao-v5k get-qualified-name-by-name "one-step-mint"))) (err ERR_PERMISSION_DENIED))
+    ;; (asserts! (is-eq contract-caller (unwrap-panic (contract-call? .stackswap-dao-v5k get-qualified-name-by-name "one-step-mint"))) (err ERR_PERMISSION_DENIED))
     (ok (var-set approved is-approved))
   )
 )

@@ -2,31 +2,31 @@
 ::set_tx_sender ST2NEB84ASENDXKYGJPQW86YXQCEFEX2ZQPG87ND
 (contract-call? 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.pepe
     add-principal-to-role
-        u1
+        u0
     'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.admin-killer
     )
 ::set_tx_sender ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
 (contract-call? 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.pepe
     mint-tokens
-    u1
+    u13
     'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
     )
 
 (contract-call? 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.pepe
     has-role
-    u1
+    u0
     'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.admin-killer
     )
 
 (contract-call? 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.pepe
     has-role
-    u1
+    u0
     'ST2NEB84ASENDXKYGJPQW86YXQCEFEX2ZQPG87ND
     )
 
 (contract-call? 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.admin-killer 
     integrate-the-evil
-    u1
+    u0
     'ST2NEB84ASENDXKYGJPQW86YXQCEFEX2ZQPG87ND
     )
 
@@ -40,3 +40,6 @@
     ascend-saint
     )
 
+(contract-call? 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.admin-killer 
+    get-evil-killer
+    )

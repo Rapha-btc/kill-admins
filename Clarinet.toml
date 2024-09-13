@@ -5,6 +5,7 @@ authors = []
 telemetry = false
 cache_dir = './.cache'
 requirements = []
+
 [contracts.admin-killer]
 path = 'contracts/admin-killer.clar'
 clarity_version = 2
