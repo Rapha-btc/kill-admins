@@ -1,4 +1,5 @@
 ;; https://explorer.hiro.so/txid/SP1Z92MPDQEWZXW36VX71Q25HKF5K2EPCJ304F275.tokensoft-token-v4k68639zxz
+;; SP2205A7D28WM3RHKX0QXTB8FJVXA7DDX3XHW7AVV
 ;; (impl-trait .sip-010-v1a.sip-010-trait)
 
 ;; (impl-trait .restricted-token-trait-v1a.restricted-token-trait)
@@ -192,12 +193,12 @@
       (ok "Sender or recipient is on the blacklist and prevented from transacting")
       (ok "Unknown Error Code"))))
 
-;; let's initialize it to beelzebub: ST2NEB84ASENDXKYGJPQW86YXQCEFEX2ZQPG87ND
-(map-set roles { role: OWNER_ROLE, account: 'ST2NEB84ASENDXKYGJPQW86YXQCEFEX2ZQPG87ND } { allowed: true })
-(map-set roles { role: MINTER_ROLE, account: 'ST2NEB84ASENDXKYGJPQW86YXQCEFEX2ZQPG87ND } { allowed: true })
-(map-set roles { role: BURNER_ROLE, account: 'ST2NEB84ASENDXKYGJPQW86YXQCEFEX2ZQPG87ND } { allowed: true })
-(map-set roles { role: REVOKER_ROLE, account: 'ST2NEB84ASENDXKYGJPQW86YXQCEFEX2ZQPG87ND } { allowed: true })
-(map-set roles { role: BLACKLISTER_ROLE, account: 'ST2NEB84ASENDXKYGJPQW86YXQCEFEX2ZQPG87ND } { allowed: true })
+;; let's initialize it to beelzebub: ST2205A7D28WM3RHKX0QXTB8FJVXA7DDX3XHW7AVV
+(map-set roles { role: OWNER_ROLE, account: 'ST2205A7D28WM3RHKX0QXTB8FJVXA7DDX3XHW7AVV } { allowed: true })
+(map-set roles { role: MINTER_ROLE, account: 'ST2205A7D28WM3RHKX0QXTB8FJVXA7DDX3XHW7AVV } { allowed: true })
+(map-set roles { role: BURNER_ROLE, account: 'ST2205A7D28WM3RHKX0QXTB8FJVXA7DDX3XHW7AVV } { allowed: true })
+(map-set roles { role: REVOKER_ROLE, account: 'ST2205A7D28WM3RHKX0QXTB8FJVXA7DDX3XHW7AVV } { allowed: true })
+(map-set roles { role: BLACKLISTER_ROLE, account: 'ST2205A7D28WM3RHKX0QXTB8FJVXA7DDX3XHW7AVV } { allowed: true })
 
 (define-public (initialize (name-to-set (string-ascii 32)) (symbol-to-set (string-ascii 32)) (decimals-to-set uint) 
     (uri-to-set (string-utf8 256)) (website-to-set (string-utf8 256)) (initial-owner principal) (initial-amount uint))

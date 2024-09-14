@@ -1,14 +1,10 @@
 ;; Admin Killer Contract
-
 ;; Constants
 (define-constant ERR_NOT_AUTHORIZED (err u1001))
 (define-constant ERR_ALREADY_SET (err u1002))
 (define-constant ERR-FAILED-KILL (err u1003))
 
-(define-constant CANT-BE-EVIL 'SP000000000000000000002Q6VF78)
-
-;; Define the principal of the Pepe token contract
-(define-constant PEPE-CONTRACT .pepe)
+(define-constant CANT-BE-EVIL 'ST000000000000000000002AMW42H) ;;'SP000000000000000000002Q6VF78)
 
 ;; Variables
 (define-data-var evil-killer principal tx-sender)
@@ -26,15 +22,6 @@
   )
 )
 
-;; (define-public (integrate-the-evil (sin uint) (beelzebub principal))
-;;   (let 
-;;   (
-;;     (result (try! (contract-call? .pepe remove-principal-from-role sin beelzebub)))
-;;   )
-;;    (ok result)
-;;     )
-;;   )
-
 ;; Function to transfer ownership of this contract to the can't-be-evil address
 (define-public (ascend-saint)
   (begin
@@ -47,5 +34,4 @@
 (define-read-only (get-evil-killer)
   (ok (var-get evil-killer))
 )
-
 (print "$aints integrate the evil")
